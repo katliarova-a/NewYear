@@ -1,0 +1,1664 @@
+#advent_calendar .advent_treat, #advent_calendar .advent_darken {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -ms-perspective: 1000;
+    perspective: 1000; }
+  
+  .advent_button span,
+  .advent_button a {
+    font-family: "TypewriterSerial"; }
+  
+  @-webkit-keyframes scale {
+    0% {
+      -webkit-transform: scale(0, 0);
+      opacity: 1; }
+  
+    100% {
+      -webkit-transform: scale(1, 1);
+      opacity: 1; } }
+  
+  @-moz-keyframes scale {
+    0% {
+      -webkit-transform: scale(0, 0);
+      opacity: 1; }
+  
+    100% {
+      -webkit-transform: scale(1, 1);
+      opacity: 1; } }
+  
+  @keyframes scale {
+    0% {
+      -webkit-transform: scale(0, 0);
+      opacity: 1; }
+  
+    100% {
+      -webkit-transform: scale(1, 1);
+      opacity: 1; } }
+  
+  @-webkit-keyframes swing {
+    0% {
+      -webkit-transform: rotate(0deg); }
+  
+    50% {
+      -webkit-transform: rotate(10deg); }
+  
+    100% {
+      -webkit-transform: rotate(0deg); } }
+  
+  @-moz-keyframes swing {
+    0% {
+      -moz-transform: rotate(0deg); }
+  
+    50% {
+      -moz-transform: rotate(10deg); }
+  
+    100% {
+      -moz-transform: rotate(0deg); } }
+  
+  @keyframes swing {
+    0% {
+      transform: rotate(0deg); }
+  
+    50% {
+      transform: rotate(10deg); }
+  
+    100% {
+      transform: rotate(0deg); } }
+  
+  @-webkit-keyframes star-blink {
+    0% {
+      -webkit-transform: scale(0) rotate(0deg); }
+  
+    45% {
+      -webkit-transform: scale(0) rotate(164.25deg); }
+  
+    50% {
+      -webkit-transform: scale(1) rotate(180deg); }
+  
+    95% {
+      -webkit-transform: scale(1) rotate(346.75deg); }
+  
+    100% {
+      -webkit-transform: scale(0) rotate(365deg); } }
+  
+  @-moz-keyframes star-blink {
+    0% {
+      -moz-transform: scale(0) rotate(0deg); }
+  
+    45% {
+      -moz-transform: scale(0) rotate(164.25deg); }
+  
+    50% {
+      -moz-transform: scale(1) rotate(180deg); }
+  
+    95% {
+      -moz-transform: scale(1) rotate(346.75deg); }
+  
+    100% {
+      -moz-transform: scale(0) rotate(365deg); } }
+  
+  @keyframes star-blink {
+    0% {
+      transform: scale(0) rotate(0deg); }
+  
+    45% {
+      transform: scale(0) rotate(164.25deg); }
+  
+    50% {
+      transform: scale(1) rotate(180deg); }
+  
+    95% {
+      transform: scale(1) rotate(346.75deg); }
+  
+    100% {
+      transform: scale(0) rotate(365deg); } }
+  
+  @-webkit-keyframes jump {
+    0%, 5%, 25%, 100% {
+      -webkit-transform: translateY(0px); }
+  
+    15% {
+      -webkit-transform: translateY(-5px); } }
+  
+  @-moz-keyframes jump {
+    0%, 5%, 25%, 100% {
+      -moz-transform: translateY(0px); }
+  
+    15% {
+      -moz-transform: translateY(-5px); } }
+  
+  @keyframes jump {
+    0%, 5%, 25%, 100% {
+      transform: translateY(0px); }
+  
+    15% {
+      transform: translateY(-5px); } }
+  
+  .green_bulb {
+    -webkit-animation: green-to-blue 0.5s ease 4s infinite alternate;
+    -moz-animation: green-to-blue 0.5s ease 4s infinite alternate;
+    -ms-animation: green-to-blue 0.5s ease 4s infinite alternate;
+    animation: green-to-blue 0.5s ease 4s infinite alternate; }
+  
+  .green_1 {
+    opacity: 0;
+    -webkit-animation: scale 0.3s ease 0.15s forwards;
+    -moz-animation: scale 0.3s ease 0.15s forwards;
+    -ms-animation: scale 0.3s ease 0.15s forwards;
+    animation: scale 0.3s ease 0.15s forwards;
+    -webkit-transform-origin: 171px 262px;
+    -moz-transform-origin: 171px 262px;
+    -ms-transform-origin: 171px 262px;
+    transform-origin: 171px 262px; }
+  
+  .green_2 {
+    opacity: 0;
+    -webkit-animation: scale 0.3s ease 0.65s forwards;
+    -moz-animation: scale 0.3s ease 0.65s forwards;
+    -ms-animation: scale 0.3s ease 0.65s forwards;
+    animation: scale 0.3s ease 0.65s forwards;
+    -webkit-transform-origin: 109px 250px;
+    -moz-transform-origin: 109px 250px;
+    -ms-transform-origin: 109px 250px;
+    transform-origin: 109px 250px; }
+  
+  .green_3 {
+    opacity: 0;
+    -webkit-animation: scale 0.2s ease 1.6s forwards;
+    -moz-animation: scale 0.2s ease 1.6s forwards;
+    -ms-animation: scale 0.2s ease 1.6s forwards;
+    animation: scale 0.2s ease 1.6s forwards;
+    -webkit-transform-origin: 78px 143px;
+    -moz-transform-origin: 78px 143px;
+    -ms-transform-origin: 78px 143px;
+    transform-origin: 78px 143px; }
+  
+  .red_bulb {
+    -webkit-animation: red-to-green 0.5s ease 4s infinite alternate;
+    -moz-animation: red-to-green 0.5s ease 4s infinite alternate;
+    -ms-animation: red-to-green 0.5s ease 4s infinite alternate;
+    animation: red-to-green 0.5s ease 4s infinite alternate; }
+  
+  .red_1 {
+    opacity: 0;
+    -webkit-animation: scale 0.3s ease 0.75s forwards;
+    -moz-animation: scale 0.3s ease 0.75s forwards;
+    -ms-animation: scale 0.3s ease 0.75s forwards;
+    animation: scale 0.3s ease 0.75s forwards;
+    -webkit-transform-origin: 130px 255px;
+    -moz-transform-origin: 130px 255px;
+    -ms-transform-origin: 130px 255px;
+    transform-origin: 130px 255px; }
+  
+  .red_2 {
+    opacity: 0;
+    -webkit-animation: scale 0.2s ease 1.2s forwards;
+    -moz-animation: scale 0.2s ease 1.2s forwards;
+    -ms-animation: scale 0.2s ease 1.2s forwards;
+    animation: scale 0.2s ease 1.2s forwards;
+    -webkit-transform-origin: 143px 186px;
+    -moz-transform-origin: 143px 186px;
+    -ms-transform-origin: 143px 186px;
+    transform-origin: 143px 186px; }
+  
+  .red_3 {
+    opacity: 0;
+    -webkit-animation: scale 0.2s ease 2s forwards;
+    -moz-animation: scale 0.2s ease 2s forwards;
+    -ms-animation: scale 0.2s ease 2s forwards;
+    animation: scale 0.2s ease 2s forwards;
+    -webkit-transform-origin: 52px 188px;
+    -moz-transform-origin: 52px 188px;
+    -ms-transform-origin: 52px 188px;
+    transform-origin: 52px 188px; }
+  
+  .red_4 {
+    opacity: 0;
+    -webkit-animation: scale 0.2s ease 2.3s forwards;
+    -moz-animation: scale 0.2s ease 2.3s forwards;
+    -ms-animation: scale 0.2s ease 2.3s forwards;
+    animation: scale 0.2s ease 2.3s forwards;
+    -webkit-transform-origin: 105px 190px;
+    -moz-transform-origin: 105px 190px;
+    -ms-transform-origin: 105px 190px;
+    transform-origin: 105px 190px; }
+  
+  .red_5 {
+    opacity: 0;
+    -webkit-animation: scale 0.2s ease 2.9s forwards;
+    -moz-animation: scale 0.2s ease 2.9s forwards;
+    -ms-animation: scale 0.2s ease 2.9s forwards;
+    animation: scale 0.2s ease 2.9s forwards;
+    -webkit-transform-origin: 148px 106px;
+    -moz-transform-origin: 148px 106px;
+    -ms-transform-origin: 148px 106px;
+    transform-origin: 148px 106px; }
+  
+  .blue_bulb {
+    -webkit-animation: blue-to-red 0.5s ease 4s infinite alternate;
+    -moz-animation: blue-to-red 0.5s ease 4s infinite alternate;
+    -ms-animation: blue-to-red 0.5s ease 4s infinite alternate;
+    animation: blue-to-red 0.5s ease 4s infinite alternate; }
+  
+  .blue_1 {
+    opacity: 0;
+    -webkit-animation: scale 0.2s ease 1.1s forwards;
+    -moz-animation: scale 0.2s ease 1.1s forwards;
+    -ms-animation: scale 0.2s ease 1.1s forwards;
+    animation: scale 0.2s ease 1.1s forwards;
+    -webkit-transform-origin: 151px 215px;
+    -moz-transform-origin: 151px 215px;
+    -ms-transform-origin: 151px 215px;
+    transform-origin: 151px 215px; }
+  
+  .blue_2 {
+    opacity: 0;
+    -webkit-animation: scale 0.2s ease 1.9s forwards;
+    -moz-animation: scale 0.2s ease 1.9s forwards;
+    -ms-animation: scale 0.2s ease 1.9s forwards;
+    animation: scale 0.2s ease 1.9s forwards;
+    -webkit-transform-origin: 52px 158px;
+    -moz-transform-origin: 52px 158px;
+    -ms-transform-origin: 52px 158px;
+    transform-origin: 52px 158px; }
+  
+  .blue_3 {
+    opacity: 0;
+    -webkit-animation: scale 0.2s ease 2.2s forwards;
+    -moz-animation: scale 0.2s ease 2.2s forwards;
+    -ms-animation: scale 0.2s ease 2.2s forwards;
+    animation: scale 0.2s ease 2.2s forwards;
+    -webkit-transform-origin: 78px 202px;
+    -moz-transform-origin: 78px 202px;
+    -ms-transform-origin: 78px 202px;
+    transform-origin: 78px 202px; }
+  
+  .blue_4 {
+    opacity: 0;
+    -webkit-animation: scale 0.2s ease 2.7s forwards;
+    -moz-animation: scale 0.2s ease 2.7s forwards;
+    -ms-animation: scale 0.2s ease 2.7s forwards;
+    animation: scale 0.2s ease 2.7s forwards;
+    -webkit-transform-origin: 138px 136px;
+    -moz-transform-origin: 138px 136px;
+    -ms-transform-origin: 138px 136px;
+    transform-origin: 138px 136px; }
+  
+  .wire {
+    fill: none;
+    stroke: #7D694E;
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-dasharray: 0, 0, 555, 555;
+    stroke-dashoffset: 0;
+    -webkit-animation: reveal 3s linear;
+    -moz-animation: reveal 3s linear;
+    -ms-animation: reveal 3s linear;
+    animation: reveal 3s linear;
+    -webkit-transform-origin: 171px 291px;
+    -moz-transform-origin: 171px 291px;
+    -ms-transform-origin: 171px 291px;
+    transform-origin: 171px 291px; }
+  
+  @-webkit-keyframes reveal {
+    from {
+      stroke-dashoffset: -555; } }
+  
+  @-moz-keyframes reveal {
+    from {
+      stroke-dashoffset: -555; } }
+  
+  @keyframes reveal {
+    from {
+      stroke-dashoffset: -555; } }
+  
+  @-webkit-keyframes red-to-green {
+    0%, 100% {
+      fill: #EF3C3C; }
+  
+    50% {
+      fill: #B3BD44; } }
+  
+  @-moz-keyframes red-to-green {
+    0%, 100% {
+      fill: #EF3C3C; }
+  
+    50% {
+      fill: #B3BD44; } }
+  
+  @keyframes red-to-green {
+    0%, 100% {
+      fill: #EF3C3C; }
+  
+    50% {
+      fill: #B3BD44; } }
+  
+  @-webkit-keyframes blue-to-red {
+    0%, 100% {
+      fill: #09B0A6; }
+  
+    50% {
+      fill: #EF3C3C; } }
+  
+  @-moz-keyframes blue-to-red {
+    0%, 100% {
+      fill: #09B0A6; }
+  
+    50% {
+      fill: #EF3C3C; } }
+  
+  @keyframes blue-to-red {
+    0%, 100% {
+      fill: #09B0A6; }
+  
+    50% {
+      fill: #EF3C3C; } }
+  
+  @-webkit-keyframes green-to-blue {
+    0%, 100% {
+      fill: #B3BD44; }
+  
+    50% {
+      fill: #09B0A6; } }
+  
+  @-moz-keyframes green-to-blue {
+    0%, 100% {
+      fill: #B3BD44; }
+  
+    50% {
+      fill: #09B0A6; } }
+  
+  @keyframes green-to-blue {
+    0%, 100% {
+      fill: #B3BD44; }
+  
+    50% {
+      fill: #09B0A6; } }
+  
+  .robin {
+    -webkit-animation: jump 3s ease 3s infinite;
+    -moz-animation: jump 3s ease 3s infinite;
+    -ms-animation: jump 3s ease 3s infinite;
+    animation: jump 3s ease 3s infinite; }
+  
+  .tail {
+    -webkit-animation: wag 10s ease forwards infinite;
+    -moz-animation: wag 10s ease forwards infinite;
+    -ms-animation: wag 10s ease forwards infinite;
+    animation: wag 10s ease forwards infinite;
+    -webkit-transform-origin: 189px 233px;
+    -moz-transform-origin: 189px 233px;
+    -ms-transform-origin: 189px 233px;
+    transform-origin: 189px 233px; }
+  
+  .eye {
+    -webkit-animation: blink 10s ease forwards infinite;
+    -moz-animation: blink 10s ease forwards infinite;
+    -ms-animation: blink 10s ease forwards infinite;
+    animation: blink 10s ease forwards infinite;
+    -webkit-transform-origin: 64px 136px;
+    -moz-transform-origin: 64px 136px;
+    -ms-transform-origin: 64px 136px;
+    transform-origin: 64px 136px; }
+  
+  .wing {
+    -webkit-animation: wing 3s ease forwards infinite;
+    -moz-animation: wing 3s ease forwards infinite;
+    -ms-animation: wing 3s ease forwards infinite;
+    animation: wing 3s ease forwards infinite;
+    -webkit-transform-origin: 80px 162px;
+    -moz-transform-origin: 80px 162px;
+    -ms-transform-origin: 80px 162px;
+    transform-origin: 80px 162px; }
+  
+  .cream {
+    -webkit-animation: ruffle 3s ease forwards infinite;
+    -moz-animation: ruffle 3s ease forwards infinite;
+    -ms-animation: ruffle 3s ease forwards infinite;
+    animation: ruffle 3s ease forwards infinite;
+    -webkit-transform-origin: 90px 200px;
+    -moz-transform-origin: 90px 200px;
+    -ms-transform-origin: 90px 200px;
+    transform-origin: 90px 200px; }
+  
+  .robin_head {
+    -webkit-animation: tilt 15s ease forwards infinite;
+    -moz-animation: tilt 15s ease forwards infinite;
+    -ms-animation: tilt 15s ease forwards infinite;
+    animation: tilt 15s ease forwards infinite;
+    -webkit-transform-origin: 100px 150px;
+    -moz-transform-origin: 100px 150px;
+    -ms-transform-origin: 100px 150px;
+    transform-origin: 100px 150px; }
+  
+  @-webkit-keyframes tilt {
+    0%, 40%, 60%, 100% {
+      -webkit-transform: rotate(0deg); }
+  
+    55% {
+      -webkit-transform: rotate(25deg) translateX(18px); } }
+  
+  @-moz-keyframes tilt {
+    0%, 40%, 60%, 100% {
+      -moz-transform: rotate(0deg); }
+  
+    55% {
+      -moz-transform: rotate(25deg) translateX(18px); } }
+  
+  @keyframes tilt {
+    0%, 40%, 60%, 100% {
+      transform: rotate(0deg); }
+  
+    55% {
+      transform: rotate(25deg) translateX(18px); } }
+  
+  @-webkit-keyframes ruffle {
+    0%, 100% {
+      -webkit-transform: rotate(0deg); }
+  
+    50% {
+      -webkit-transform: rotate(-2deg); } }
+  
+  @-moz-keyframes ruffle {
+    0%, 100% {
+      -moz-transform: rotate(0deg); }
+  
+    50% {
+      -moz-transform: rotate(-2deg); } }
+  
+  @keyframes ruffle {
+    0%, 100% {
+      transform: rotate(0deg); }
+  
+    50% {
+      transform: rotate(-2deg); } }
+  
+  @-webkit-keyframes wing {
+    0%, 100% {
+      -webkit-transform: rotate(0deg); }
+  
+    50% {
+      -webkit-transform: rotate(10deg); } }
+  
+  @-moz-keyframes wing {
+    0%, 100% {
+      -moz-transform: rotate(0deg); }
+  
+    50% {
+      -moz-transform: rotate(10deg); } }
+  
+  @keyframes wing {
+    0%, 100% {
+      transform: rotate(0deg); }
+  
+    50% {
+      transform: rotate(10deg); } }
+  
+  @-webkit-keyframes blink {
+    0%, 10%, 40%, 50%, 80%, 90%, 100% {
+      -webkit-transform: scale(1, 1); }
+  
+    5%, 45%, 85% {
+      -webkit-transform: scale(0, 0); } }
+  
+  @-moz-keyframes blink {
+    0%, 10%, 40%, 50%, 80%, 90%, 100% {
+      -moz-transform: scale(1, 1); }
+  
+    5%, 45%, 85% {
+      -moz-transform: scale(0, 0); } }
+  
+  @keyframes blink {
+    0%, 10%, 40%, 50%, 80%, 90%, 100% {
+      transform: scale(1, 1); }
+  
+    5%, 45%, 85% {
+      transform: scale(0, 0); } }
+  
+  @-webkit-keyframes wag {
+    0%, 45%, 65%, 100% {
+      -webkit-transform: rotate(0deg); }
+  
+    25%, 75% {
+      -webkit-transform: rotate(5deg); }
+  
+    50% {
+      -webkit-transform: rotate(-10deg); } }
+  
+  @-moz-keyframes wag {
+    0%, 45%, 65%, 100% {
+      -moz-transform: rotate(0deg); }
+  
+    25%, 75% {
+      -moz-transform: rotate(5deg); }
+  
+    50% {
+      -moz-transform: rotate(-10deg); } }
+  
+  @keyframes wag {
+    0%, 45%, 65%, 100% {
+      transform: rotate(0deg); }
+  
+    25%, 75% {
+      transform: rotate(5deg); }
+  
+    50% {
+      transform: rotate(-10deg); } }
+  
+  .brown {
+    -webkit-transform: translateY(-291px);
+    -moz-transform: translateY(-291px);
+    -ms-transform: translateY(-291px);
+    transform: translateY(-291px);
+    -webkit-animation: drop 0.7s ease forwards, brown 5s ease 0.4s infinite;
+    -moz-animation: drop 0.7s ease forwards, brown 5s ease 0.4s infinite;
+    -ms-animation: drop 0.7s ease forwards, brown 5s ease 0.4s infinite;
+    animation: drop 0.7s ease forwards, brown 5s ease 0.4s infinite;
+    -webkit-transform-origin: 62px 0px;
+    -moz-transform-origin: 62px 0px;
+    -ms-transform-origin: 62px 0px;
+    transform-origin: 62px 0px; }
+  
+  .red {
+    -webkit-transform: translateY(-291px);
+    -moz-transform: translateY(-291px);
+    -ms-transform: translateY(-291px);
+    transform: translateY(-291px);
+    -webkit-animation: drop 1s ease forwards, red 3s ease 0.4s infinite;
+    -moz-animation: drop 1s ease forwards, red 3s ease 0.4s infinite;
+    -ms-animation: drop 1s ease forwards, red 3s ease 0.4s infinite;
+    animation: drop 1s ease forwards, red 3s ease 0.4s infinite;
+    -webkit-transform-origin: 111px 0px;
+    -moz-transform-origin: 111px 0px;
+    -ms-transform-origin: 111px 0px;
+    transform-origin: 111px 0px; }
+  
+  .green {
+    -webkit-transform: translateY(-271px);
+    -moz-transform: translateY(-271px);
+    -ms-transform: translateY(-271px);
+    transform: translateY(-271px);
+    -webkit-animation: drop 2s ease forwards, green 4s ease 0.4s infinite;
+    -moz-animation: drop 2s ease forwards, green 4s ease 0.4s infinite;
+    -ms-animation: drop 2s ease forwards, green 4s ease 0.4s infinite;
+    animation: drop 2s ease forwards, green 4s ease 0.4s infinite;
+    -webkit-transform-origin: 133px 0px;
+    -moz-transform-origin: 133px 0px;
+    -ms-transform-origin: 133px 0px;
+    transform-origin: 133px 0px; }
+  
+  @-webkit-keyframes drop {
+    0% {
+      -webkit-transform: translateY(-291px) rotate(0deg); }
+  
+    50% {
+      -webkit-transform: rotate(2deg); }
+  
+    75% {
+      -webkit-transform: rotate(-2deg); }
+  
+    100% {
+      -webkit-transform: translateY(0px) rotate(0deg); } }
+  
+  @-moz-keyframes drop {
+    0% {
+      -moz-transform: translateY(-291px) rotate(0deg); }
+  
+    50% {
+      -moz-transform: rotate(2deg); }
+  
+    75% {
+      -moz-transform: rotate(-2deg); }
+  
+    100% {
+      -moz-transform: translateY(0px) rotate(0deg); } }
+  
+  @keyframes drop {
+    0% {
+      transform: translateY(-291px) rotate(0deg); }
+  
+    50% {
+      transform: rotate(2deg); }
+  
+    75% {
+      transform: rotate(-2deg); }
+  
+    100% {
+      transform: translateY(0px) rotate(0deg); } }
+  
+  @-webkit-keyframes brown {
+    0%, 100% {
+      -webkit-transform: rotate(2deg); }
+  
+    50% {
+      -webkit-transform: rotate(-2deg); } }
+  
+  @-moz-keyframes brown {
+    0%, 100% {
+      -moz-transform: rotate(2deg); }
+  
+    50% {
+      -moz-transform: rotate(-2deg); } }
+  
+  @keyframes brown {
+    0%, 100% {
+      transform: rotate(2deg); }
+  
+    50% {
+      transform: rotate(-2deg); } }
+  
+  @-webkit-keyframes red {
+    0%, 100% {
+      -webkit-transform: rotate(5deg); }
+  
+    50% {
+      -webkit-transform: rotate(-5deg); } }
+  
+  @-moz-keyframes red {
+    0%, 100% {
+      -moz-transform: rotate(5deg); }
+  
+    50% {
+      -moz-transform: rotate(-5deg); } }
+  
+  @keyframes red {
+    0%, 100% {
+      transform: rotate(5deg); }
+  
+    50% {
+      transform: rotate(-5deg); } }
+  
+  @-webkit-keyframes green {
+    0%, 100% {
+      -webkit-transform: rotate(3deg); }
+  
+    50% {
+      -webkit-transform: rotate(-3deg); } }
+  
+  @-moz-keyframes green {
+    0%, 100% {
+      -moz-transform: rotate(3deg); }
+  
+    50% {
+      -moz-transform: rotate(-3deg); } }
+  
+  @keyframes green {
+    0%, 100% {
+      transform: rotate(3deg); }
+  
+    50% {
+      transform: rotate(-3deg); } }
+  
+  .gift {
+    -webkit-animation: jump 3s ease 5s infinite, jiggle 1s ease 5s infinite;
+    -moz-animation: jump 3s ease 5s infinite, jiggle 1s ease 5s infinite;
+    -ms-animation: jump 3s ease 5s infinite, jiggle 1s ease 5s infinite;
+    animation: jump 3s ease 5s infinite, jiggle 1s ease 5s infinite;
+    -webkit-transform-origin: 104px 289px;
+    -moz-transform-origin: 104px 289px;
+    -ms-transform-origin: 104px 289px;
+    transform-origin: 104px 289px; }
+    .gift .box_bottom {
+      -webkit-animation: fall 1s ease-in forwards;
+      -moz-animation: fall 1s ease-in forwards;
+      -ms-animation: fall 1s ease-in forwards;
+      animation: fall 1s ease-in forwards; }
+    .gift .box_lid {
+      -webkit-transform: translateY(-303px);
+      -moz-transform: translateY(-303px);
+      -ms-transform: translateY(-303px);
+      transform: translateY(-303px);
+      -webkit-animation: fall 1s ease-in 1s forwards;
+      -moz-animation: fall 1s ease-in 1s forwards;
+      -ms-animation: fall 1s ease-in 1s forwards;
+      animation: fall 1s ease-in 1s forwards; }
+    .gift .wrap_across {
+      opacity: 0;
+      -webkit-animation: scale 0.5s ease 2s forwards;
+      -moz-animation: scale 0.5s ease 2s forwards;
+      -ms-animation: scale 0.5s ease 2s forwards;
+      animation: scale 0.5s ease 2s forwards;
+      -webkit-transform-origin: 25px 215px;
+      -moz-transform-origin: 25px 215px;
+      -ms-transform-origin: 25px 215px;
+      transform-origin: 25px 215px; }
+    .gift .wrap_up {
+      opacity: 0;
+      -webkit-animation: scale 0.5s ease 2.5s forwards;
+      -moz-animation: scale 0.5s ease 2.5s forwards;
+      -ms-animation: scale 0.5s ease 2.5s forwards;
+      animation: scale 0.5s ease 2.5s forwards;
+      -webkit-transform-origin: 60px 120px;
+      -moz-transform-origin: 60px 120px;
+      -ms-transform-origin: 60px 120px;
+      transform-origin: 60px 120px; }
+    .gift .bow {
+      opacity: 0;
+      -webkit-animation: scale 1s ease 3s forwards;
+      -moz-animation: scale 1s ease 3s forwards;
+      -ms-animation: scale 1s ease 3s forwards;
+      animation: scale 1s ease 3s forwards;
+      -webkit-transform-origin: 75px 122px;
+      -moz-transform-origin: 75px 122px;
+      -ms-transform-origin: 75px 122px;
+      transform-origin: 75px 122px; }
+  
+  @-webkit-keyframes fall {
+    0% {
+      -webkit-transform: translateY(-303px); }
+  
+    60% {
+      -webkit-transform: translateY(0px); }
+  
+    65% {
+      -webkit-transform: translateY(-20px) rotate(-2deg); }
+  
+    80% {
+      -webkit-transform: translateY(0px) rotate(0deg); }
+  
+    85% {
+      -webkit-transform: translateY(-10px) rotate(2deg); }
+  
+    100% {
+      -webkit-transform: translateY(0px) rotate(0deg); } }
+  
+  @-moz-keyframes fall {
+    0% {
+      -moz-transform: translateY(-303px); }
+  
+    60% {
+      -moz-transform: translateY(0px); }
+  
+    65% {
+      -moz-transform: translateY(-20px) rotate(-2deg); }
+  
+    80% {
+      -moz-transform: translateY(0px) rotate(0deg); }
+  
+    85% {
+      -moz-transform: translateY(-10px) rotate(2deg); }
+  
+    100% {
+      -moz-transform: translateY(0px) rotate(0deg); } }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(-303px); }
+  
+    60% {
+      transform: translateY(0px); }
+  
+    65% {
+      transform: translateY(-20px) rotate(-2deg); }
+  
+    80% {
+      transform: translateY(0px) rotate(0deg); }
+  
+    85% {
+      transform: translateY(-10px) rotate(2deg); }
+  
+    100% {
+      transform: translateY(0px) rotate(0deg); } }
+  
+  @-webkit-keyframes jiggle {
+    0%, 50%, 100% {
+      -webkit-transform: rotate(0deg); }
+  
+    25% {
+      -webkit-transform: translateY(-5px) rotate(1deg); }
+  
+    70% {
+      -webkit-transform: rotate(-1deg); } }
+  
+  @-moz-keyframes jiggle {
+    0%, 50%, 100% {
+      -moz-transform: rotate(0deg); }
+  
+    25% {
+      -moz-transform: translateY(-5px) rotate(1deg); }
+  
+    70% {
+      -moz-transform: rotate(-1deg); } }
+  
+  @keyframes jiggle {
+    0%, 50%, 100% {
+      transform: rotate(0deg); }
+  
+    25% {
+      transform: translateY(-5px) rotate(1deg); }
+  
+    70% {
+      transform: rotate(-1deg); } }
+  
+  .mitten_right {
+    -webkit-animation: right-swing 3s ease-in-out infinite;
+    -moz-animation: right-swing 3s ease-in-out infinite;
+    -ms-animation: right-swing 3s ease-in-out infinite;
+    animation: right-swing 3s ease-in-out infinite;
+    -webkit-transform-origin: 89px 58px;
+    -moz-transform-origin: 89px 58px;
+    -ms-transform-origin: 89px 58px;
+    transform-origin: 89px 58px; }
+  
+  .mitten_left {
+    -webkit-animation: left-swing 3s ease-in-out infinite;
+    -moz-animation: left-swing 3s ease-in-out infinite;
+    -ms-animation: left-swing 3s ease-in-out infinite;
+    animation: left-swing 3s ease-in-out infinite;
+    -webkit-transform-origin: 65px 60px;
+    -moz-transform-origin: 65px 60px;
+    -ms-transform-origin: 65px 60px;
+    transform-origin: 65px 60px; }
+  
+  @-webkit-keyframes right-swing {
+    0%, 100% {
+      -webkit-transform: rotate(0); }
+  
+    50% {
+      -webkit-transform: rotate(25deg); } }
+  
+  @-moz-keyframes right-swing {
+    0%, 100% {
+      -moz-transform: rotate(0); }
+  
+    50% {
+      -moz-transform: rotate(25deg); } }
+  
+  @keyframes right-swing {
+    0%, 100% {
+      transform: rotate(0); }
+  
+    50% {
+      transform: rotate(25deg); } }
+  
+  @-webkit-keyframes left-swing {
+    0%, 100% {
+      -webkit-transform: rotate(0); }
+  
+    50% {
+      -webkit-transform: rotate(-15deg); } }
+  
+  @-moz-keyframes left-swing {
+    0%, 100% {
+      -moz-transform: rotate(0); }
+  
+    50% {
+      -moz-transform: rotate(-15deg); } }
+  
+  @keyframes left-swing {
+    0%, 100% {
+      transform: rotate(0); }
+  
+    50% {
+      transform: rotate(-15deg); } }
+  
+  .snowman {
+    -webkit-animation: sway 3s ease 5s infinite;
+    -moz-animation: sway 3s ease 5s infinite;
+    -ms-animation: sway 3s ease 5s infinite;
+    animation: sway 3s ease 5s infinite;
+    -webkit-transform-origin: 101px 303px;
+    -moz-transform-origin: 101px 303px;
+    -ms-transform-origin: 101px 303px;
+    transform-origin: 101px 303px; }
+    .snowman .snowman_body {
+      -webkit-animation: body-drop 0.5s ease-in forwards;
+      -moz-animation: body-drop 0.5s ease-in forwards;
+      -ms-animation: body-drop 0.5s ease-in forwards;
+      animation: body-drop 0.5s ease-in forwards; }
+    .snowman .scarf {
+      opacity: 0;
+      -webkit-animation: scale 0.5s ease 1s forwards;
+      -moz-animation: scale 0.5s ease 1s forwards;
+      -ms-animation: scale 0.5s ease 1s forwards;
+      animation: scale 0.5s ease 1s forwards;
+      -webkit-transform-origin: 55px 165px;
+      -moz-transform-origin: 55px 165px;
+      -ms-transform-origin: 55px 165px;
+      transform-origin: 55px 165px; }
+    .snowman .scarf_knot {
+      opacity: 0;
+      -webkit-animation: scale 0.3s ease 1.5s forwards;
+      -moz-animation: scale 0.3s ease 1.5s forwards;
+      -ms-animation: scale 0.3s ease 1.5s forwards;
+      animation: scale 0.3s ease 1.5s forwards;
+      -webkit-transform-origin: 92px 190px;
+      -moz-transform-origin: 92px 190px;
+      -ms-transform-origin: 92px 190px;
+      transform-origin: 92px 190px; }
+    .snowman .snowman_head {
+      -webkit-transform: translateY(-303px);
+      -moz-transform: translateY(-303px);
+      -ms-transform: translateY(-303px);
+      transform: translateY(-303px);
+      -webkit-animation: body-drop 0.5s ease-in 0.2s forwards;
+      -moz-animation: body-drop 0.5s ease-in 0.2s forwards;
+      -ms-animation: body-drop 0.5s ease-in 0.2s forwards;
+      animation: body-drop 0.5s ease-in 0.2s forwards; }
+    .snowman .hat {
+      -webkit-transform: translateY(-303px);
+      -moz-transform: translateY(-303px);
+      -ms-transform: translateY(-303px);
+      transform: translateY(-303px);
+      -webkit-animation: body-drop 0.5s ease-in 0.3s forwards;
+      -moz-animation: body-drop 0.5s ease-in 0.3s forwards;
+      -ms-animation: body-drop 0.5s ease-in 0.3s forwards;
+      animation: body-drop 0.5s ease-in 0.3s forwards; }
+    .snowman .nose {
+      opacity: 0;
+      -webkit-animation: scale 0.3s ease 2.5s forwards;
+      -moz-animation: scale 0.3s ease 2.5s forwards;
+      -ms-animation: scale 0.3s ease 2.5s forwards;
+      animation: scale 0.3s ease 2.5s forwards;
+      -webkit-transform-origin: 104px 142px;
+      -moz-transform-origin: 104px 142px;
+      -ms-transform-origin: 104px 142px;
+      transform-origin: 104px 142px; }
+    .snowman .mouth .m1 {
+      opacity: 0;
+      -webkit-animation: scale 0.1s ease 3.1s forwards;
+      -moz-animation: scale 0.1s ease 3.1s forwards;
+      -ms-animation: scale 0.1s ease 3.1s forwards;
+      animation: scale 0.1s ease 3.1s forwards;
+      -webkit-transform-origin: 82px 156px;
+      -moz-transform-origin: 82px 156px;
+      -ms-transform-origin: 82px 156px;
+      transform-origin: 82px 156px; }
+    .snowman .mouth .m2 {
+      opacity: 0;
+      -webkit-animation: scale 0.1s ease 3.2s forwards;
+      -moz-animation: scale 0.1s ease 3.2s forwards;
+      -ms-animation: scale 0.1s ease 3.2s forwards;
+      animation: scale 0.1s ease 3.2s forwards;
+      -webkit-transform-origin: 86px 162px;
+      -moz-transform-origin: 86px 162px;
+      -ms-transform-origin: 86px 162px;
+      transform-origin: 86px 162px; }
+    .snowman .mouth .m3 {
+      opacity: 0;
+      -webkit-animation: scale 0.1s ease 3.3s forwards;
+      -moz-animation: scale 0.1s ease 3.3s forwards;
+      -ms-animation: scale 0.1s ease 3.3s forwards;
+      animation: scale 0.1s ease 3.3s forwards;
+      -webkit-transform-origin: 92px 167px;
+      -moz-transform-origin: 92px 167px;
+      -ms-transform-origin: 92px 167px;
+      transform-origin: 92px 167px; }
+    .snowman .mouth .m4 {
+      opacity: 0;
+      -webkit-animation: scale 0.1s ease 3.4s forwards;
+      -moz-animation: scale 0.1s ease 3.4s forwards;
+      -ms-animation: scale 0.1s ease 3.4s forwards;
+      animation: scale 0.1s ease 3.4s forwards;
+      -webkit-transform-origin: 98px 169px;
+      -moz-transform-origin: 98px 169px;
+      -ms-transform-origin: 98px 169px;
+      transform-origin: 98px 169px; }
+    .snowman .mouth .m5 {
+      opacity: 0;
+      -webkit-animation: scale 0.1s ease 3.5s forwards;
+      -moz-animation: scale 0.1s ease 3.5s forwards;
+      -ms-animation: scale 0.1s ease 3.5s forwards;
+      animation: scale 0.1s ease 3.5s forwards;
+      -webkit-transform-origin: 106px 171px;
+      -moz-transform-origin: 106px 171px;
+      -ms-transform-origin: 106px 171px;
+      transform-origin: 106px 171px; }
+    .snowman .mouth .m6 {
+      opacity: 0;
+      -webkit-animation: scale 0.1s ease 3.6s forwards;
+      -moz-animation: scale 0.1s ease 3.6s forwards;
+      -ms-animation: scale 0.1s ease 3.6s forwards;
+      animation: scale 0.1s ease 3.6s forwards;
+      -webkit-transform-origin: 113px 171px;
+      -moz-transform-origin: 113px 171px;
+      -ms-transform-origin: 113px 171px;
+      transform-origin: 113px 171px; }
+    .snowman .mouth .m7 {
+      opacity: 0;
+      -webkit-animation: scale 0.1s ease 3.7s forwards;
+      -moz-animation: scale 0.1s ease 3.7s forwards;
+      -ms-animation: scale 0.1s ease 3.7s forwards;
+      animation: scale 0.1s ease 3.7s forwards;
+      -webkit-transform-origin: 120px 171px;
+      -moz-transform-origin: 120px 171px;
+      -ms-transform-origin: 120px 171px;
+      transform-origin: 120px 171px; }
+    .snowman .mouth .m8 {
+      opacity: 0;
+      -webkit-animation: scale 0.1s ease 3.8s forwards;
+      -moz-animation: scale 0.1s ease 3.8s forwards;
+      -ms-animation: scale 0.1s ease 3.8s forwards;
+      animation: scale 0.1s ease 3.8s forwards;
+      -webkit-transform-origin: 127px 169px;
+      -moz-transform-origin: 127px 169px;
+      -ms-transform-origin: 127px 169px;
+      transform-origin: 127px 169px; }
+    .snowman .mouth .m9 {
+      opacity: 0;
+      -webkit-animation: scale 0.1s ease 3.9s forwards;
+      -moz-animation: scale 0.1s ease 3.9s forwards;
+      -ms-animation: scale 0.1s ease 3.9s forwards;
+      animation: scale 0.1s ease 3.9s forwards;
+      -webkit-transform-origin: 132px 165px;
+      -moz-transform-origin: 132px 165px;
+      -ms-transform-origin: 132px 165px;
+      transform-origin: 132px 165px; }
+    .snowman .mouth .m10 {
+      opacity: 0;
+      -webkit-animation: scale 0.1s ease 4s forwards;
+      -moz-animation: scale 0.1s ease 4s forwards;
+      -ms-animation: scale 0.1s ease 4s forwards;
+      animation: scale 0.1s ease 4s forwards;
+      -webkit-transform-origin: 137px 160px;
+      -moz-transform-origin: 137px 160px;
+      -ms-transform-origin: 137px 160px;
+      transform-origin: 137px 160px; }
+    .snowman .eye_left {
+      opacity: 0;
+      -webkit-animation: scale 0.2s ease 2.7s forwards;
+      -moz-animation: scale 0.2s ease 2.7s forwards;
+      -ms-animation: scale 0.2s ease 2.7s forwards;
+      animation: scale 0.2s ease 2.7s forwards;
+      -webkit-transform-origin: 92px 122px;
+      -moz-transform-origin: 92px 122px;
+      -ms-transform-origin: 92px 122px;
+      transform-origin: 92px 122px; }
+    .snowman .eye_right {
+      opacity: 0;
+      -webkit-animation: scale 0.2s ease 2.9s forwards;
+      -moz-animation: scale 0.2s ease 2.9s forwards;
+      -ms-animation: scale 0.2s ease 2.9s forwards;
+      animation: scale 0.2s ease 2.9s forwards;
+      -webkit-transform-origin: 125px 120px;
+      -moz-transform-origin: 125px 120px;
+      -ms-transform-origin: 125px 120px;
+      transform-origin: 125px 120px; }
+    .snowman .button_top {
+      opacity: 0;
+      -webkit-animation: scale 0.3s ease 2.2s forwards;
+      -moz-animation: scale 0.3s ease 2.2s forwards;
+      -ms-animation: scale 0.3s ease 2.2s forwards;
+      animation: scale 0.3s ease 2.2s forwards;
+      -webkit-transform-origin: 132px 217px;
+      -moz-transform-origin: 132px 217px;
+      -ms-transform-origin: 132px 217px;
+      transform-origin: 132px 217px; }
+    .snowman .button_bottom {
+      opacity: 0;
+      -webkit-animation: scale 0.3s ease 2s forwards;
+      -moz-animation: scale 0.3s ease 2s forwards;
+      -ms-animation: scale 0.3s ease 2s forwards;
+      animation: scale 0.3s ease 2s forwards;
+      -webkit-transform-origin: 132px 252px;
+      -moz-transform-origin: 132px 252px;
+      -ms-transform-origin: 132px 252px;
+      transform-origin: 132px 252px; }
+  
+  @-webkit-keyframes body-drop {
+    0% {
+      -webkit-transform: translateY(-303px); }
+  
+    100% {
+      -webkit-transform: translateY(0px); } }
+  
+  @-moz-keyframes body-drop {
+    0% {
+      -moz-transform: translateY(-303px); }
+  
+    100% {
+      -moz-transform: translateY(0px); } }
+  
+  @keyframes body-drop {
+    0% {
+      transform: translateY(-303px); }
+  
+    100% {
+      transform: translateY(0px); } }
+  
+  @-webkit-keyframes scale {
+    0% {
+      opacity: 1;
+      -webkit-transform: scale(0, 0); }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: scale(1, 1); } }
+  
+  @-moz-keyframes scale {
+    0% {
+      opacity: 1;
+      -moz-transform: scale(0, 0); }
+  
+    100% {
+      opacity: 1;
+      -moz-transform: scale(1, 1); } }
+  
+  @keyframes scale {
+    0% {
+      opacity: 1;
+      transform: scale(0, 0); }
+  
+    100% {
+      opacity: 1;
+      transform: scale(1, 1); } }
+  
+  @-webkit-keyframes sway {
+    0%, 50%, 100% {
+      -webkit-transform: rotate(0deg); }
+  
+    25% {
+      -webkit-transform: rotate(1deg); }
+  
+    75% {
+      -webkit-transform: rotate(-1deg); } }
+  
+  @-moz-keyframes sway {
+    0%, 50%, 100% {
+      -moz-transform: rotate(0deg); }
+  
+    25% {
+      -moz-transform: rotate(1deg); }
+  
+    75% {
+      -moz-transform: rotate(-1deg); } }
+  
+  @keyframes sway {
+    0%, 50%, 100% {
+      transform: rotate(0deg); }
+  
+    25% {
+      transform: rotate(1deg); }
+  
+    75% {
+      transform: rotate(-1deg); } }
+  
+  #advent_calendar {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1500;
+    width: 100%;
+    height: 100%;
+    background: url("/assets/giraffe/promotions/2013/advent/img/black.png");
+    background: rgba(0, 0, 0, 0.7); }
+    #advent_calendar .advent_treat_wrapper,
+    #advent_calendar .advent_decorations {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -263px 0 0 -465px; }
+    #advent_calendar .advent_treat_wrapper {
+      z-index: 3;
+      width: 900px;
+      height: 496px;
+      border: solid 15px transparent;
+      background: url("/assets/giraffe/promotions/2013/advent/img/door-silhouette.png") 290px 33px no-repeat; }
+    #advent_calendar .advent_door,
+    #advent_calendar .advent_door_shadow,
+    #advent_calendar .advent_door_inside {
+      position: absolute;
+      width: 330px;
+      height: 432px; }
+    #advent_calendar .advent_door {
+      -webkit-transform-origin: 0 50%;
+      -moz-transform-origin: 0 50%;
+      -ms-transform-origin: 0 50%;
+      transform-origin: 0 50%;
+      top: 33px;
+      left: 290px;
+      z-index: 30; }
+      #advent_calendar .advent_door svg {
+        display: none; }
+      #advent_calendar .advent_door.svg svg {
+        display: block; }
+      #advent_calendar .advent_door.svg img {
+        display: none; }
+    #advent_calendar .advent_door_illustration {
+      top: 26px;
+      left: 18px; }
+    #advent_calendar .advent_door_shadow {
+      -webkit-transform-origin: 0 50%;
+      -moz-transform-origin: 0 50%;
+      -ms-transform-origin: 0 50%;
+      transform-origin: 0 50%;
+      top: 36px;
+      left: 293px;
+      z-index: 0;
+      opacity: .8;
+      background: url("/assets/giraffe/promotions/2013/advent/img/door-silhouette.png"); }
+    #advent_calendar .advent_treat {
+      position: absolute;
+      top: 49px;
+      left: 300px;
+      z-index: 20;
+      width: 304px;
+      height: 400px;
+      background: black url("/assets/giraffe/promotions/2013/advent/img/treat-background.jpg") 50% 50%; }
+      #advent_calendar .advent_treat img {
+        -webkit-transform-origin: 0 50%;
+        -moz-transform-origin: 0 50%;
+        -ms-transform-origin: 0 50%;
+        transform-origin: 0 50%;
+        position: absolute;
+        top: 50%;
+        left: -10px;
+        z-index: 0;
+        width: 370px;
+        height: 530px;
+        margin-top: -265px;
+        opacity: 0; }
+    #advent_calendar .advent_decorations {
+      z-index: 1;
+      width: 900px;
+      height: 496px;
+      border: solid 15px #391f52;
+      box-shadow: inset 0 0 0 1px rgba(115, 63, 180, 0.5);
+      background: #5b328e url("/assets/giraffe/promotions/2013/advent/img/background.jpg") 50% 50% no-repeat; }
+      #advent_calendar .advent_decorations .left {
+        float: left;
+        position: relative;
+        z-index: 0;
+        width: 290px;
+        height: 496px;
+        text-align: center; }
+        #advent_calendar .advent_decorations .left img {
+          position: absolute; }
+      #advent_calendar .advent_decorations .advent_logo {
+        top: -40px;
+        left: -42px; }
+      #advent_calendar .advent_decorations .advent_title {
+        top: 201px;
+        left: 14px; }
+      #advent_calendar .advent_decorations .advent_explanation {
+        top: 341px;
+        left: 9px; }
+      #advent_calendar .advent_decorations .advent_arrow {
+        -webkit-transform-origin: 50% -100%;
+        -moz-transform-origin: 50% -100%;
+        -ms-transform-origin: 50% -100%;
+        transform-origin: 50% -100%;
+        top: 407px;
+        left: 164px; }
+        #advent_calendar .advent_decorations .advent_arrow.swing {
+          -webkit-animation: swing 1s infinite cubic-bezier(0.645, 0.045, 0.355, 1);
+          -moz-animation: swing 1s infinite cubic-bezier(0.645, 0.045, 0.355, 1);
+          -ms-animation: swing 1s infinite cubic-bezier(0.645, 0.045, 0.355, 1);
+          animation: swing 1s infinite cubic-bezier(0.645, 0.045, 0.355, 1); }
+      #advent_calendar .advent_decorations .right {
+        float: right;
+        width: 250px;
+        height: 496px;
+        background: url("/assets/giraffe/promotions/2013/advent/img/other-doors.jpg"); }
+    #advent_calendar .advent_close {
+      position: absolute;
+      top: -24px;
+      right: -24px;
+      z-index: 20;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      box-shadow: 0 3px #e3700d;
+      background: #f38a30 url("/assets/giraffe/promotions/2013/advent/img/close-icon.png") 50% 50% no-repeat;
+      cursor: pointer; }
+    #advent_calendar .no_thanks {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 30;
+      width: 380px;
+      padding: 10px 15px;
+      margin: 283px 0 0 -206px;
+      border: solid 1px white;
+      border-color: rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      background: black;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      font-size: 12px;
+      text-align: center;
+      cursor: pointer; }
+    #advent_calendar .advent_darken {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      background: black; }
+  
+  .advent_door_illustration {
+    position: relative;
+    z-index: 0;
+    width: 286px;
+    height: 380px;
+    background-position: -26px -18px; }
+    .advent_door_illustration.advent_beige {
+      background-color: #d8cead; }
+    .advent_door_illustration.advent_red {
+      background-color: #eb3d41; }
+    .advent_door_illustration.advent_green {
+      background-color: #a6ad47; }
+    .advent_door_illustration.advent_turquoise {
+      background-color: #19a595; }
+  
+  .advent_beige {
+    background-image: url("/assets/giraffe/promotions/2013/advent/img/door-texture-beige.png"); }
+  
+  .advent_red {
+    background-image: url("/assets/giraffe/promotions/2013/advent/img/door-texture-red.png"); }
+  
+  .advent_green {
+    background-image: url("/assets/giraffe/promotions/2013/advent/img/door-texture-green.png"); }
+  
+  .advent_turquoise {
+    background-image: url("/assets/giraffe/promotions/2013/advent/img/door-texture-turquoise.png"); }
+  
+  .illustration_gift .advent_star_a1 {
+    top: 10px;
+    left: 100px; }
+  .illustration_gift .advent_star_a2 {
+    top: 190px;
+    left: 190px; }
+  .illustration_gift .advent_star_a3 {
+    top: 20px;
+    left: 50px; }
+  
+  .illustration_mittens .advent_star_a1 {
+    top: 230px;
+    left: 220px; }
+  .illustration_mittens .advent_star_a2 {
+    top: 200px;
+    left: 190px; }
+  .illustration_mittens .advent_star_a3 {
+    top: 242px;
+    left: 176px; }
+  
+  .illustration_bird .advent_star_a1 {
+    top: 10px;
+    left: 30px; }
+  .illustration_bird .advent_star_a2 {
+    top: 10px;
+    left: 120px; }
+  .illustration_bird .advent_star_a3 {
+    top: 42px;
+    left: 84px; }
+  
+  .illustration_baubles .advent_star_a1 {
+    top: 12px;
+    left: 126px; }
+  .illustration_baubles .advent_star_a2 {
+    top: 200px;
+    left: 165px; }
+  .illustration_baubles .advent_star_a3 {
+    top: 230px;
+    left: 205px; }
+  
+  .illustration_snowman .advent_star_a1 {
+    top: 12px;
+    left: 126px; }
+  .illustration_snowman .advent_star_a2 {
+    top: 200px;
+    left: 185px; }
+  .illustration_snowman .advent_star_a3 {
+    top: 250px;
+    left: 215px; }
+  
+  .illustration_lights .advent_star_a1 {
+    top: 10px;
+    left: 100px; }
+  .illustration_lights .advent_star_a2 {
+    top: 190px;
+    left: 190px; }
+  .illustration_lights .advent_star_a3 {
+    top: 20px;
+    left: 50px; }
+  
+  .advent_door_number {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 130px;
+    height: 200px;
+    background-image: url("/assets/giraffe/promotions/2013/advent/img/door/numbers.png"); }
+  
+  .advent_number_1 {
+    background-position: 0px 0; }
+  
+  .advent_number_2 {
+    background-position: -130px 0; }
+  
+  .advent_number_3 {
+    background-position: -260px 0; }
+  
+  .advent_number_4 {
+    background-position: -390px 0; }
+  
+  .advent_number_5 {
+    background-position: -520px 0; }
+  
+  .advent_number_6 {
+    background-position: -650px 0; }
+  
+  .advent_number_7 {
+    background-position: -780px 0; }
+  
+  .advent_number_8 {
+    background-position: -910px 0; }
+  
+  .advent_number_9 {
+    background-position: -1040px 0; }
+  
+  .advent_number_10 {
+    background-position: -1170px 0; }
+  
+  .advent_number_11 {
+    background-position: -1300px 0; }
+  
+  .advent_number_12 {
+    background-position: -1430px 0; }
+  
+  .advent_number_13 {
+    background-position: -1560px 0; }
+  
+  .advent_number_14 {
+    background-position: -1690px 0; }
+  
+  .advent_number_15 {
+    background-position: -1820px 0; }
+  
+  .advent_number_16 {
+    background-position: -1950px 0; }
+  
+  .advent_number_17 {
+    background-position: -2080px 0; }
+  
+  .advent_number_18 {
+    background-position: -2210px 0; }
+  
+  .advent_number_19 {
+    background-position: -2340px 0; }
+  
+  .advent_number_20 {
+    background-position: -2470px 0; }
+  
+  .advent_number_21 {
+    background-position: -2600px 0; }
+  
+  .advent_number_22 {
+    background-position: -2730px 0; }
+  
+  .advent_number_23 {
+    background-position: -2860px 0; }
+  
+  .advent_number_24 {
+    background-position: -2990px 0; }
+  
+  .advent_number_25 {
+    background-position: -3120px 0; }
+  
+  .advent_star_orange,
+  .advent_star_yellow {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 0;
+    width: 60px;
+    height: 60px; }
+    .advent_star_orange:before,
+    .advent_star_yellow:before {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 60px;
+      background: url("/assets/giraffe/promotions/2013/advent/img/door/stars.png"); }
+  
+  .advent_star_orange:before {
+    background-position: 0 100%; }
+  
+  .advent_star_large:before {
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9); }
+  
+  .advent_star_medium:before {
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7); }
+  
+  .advent_star_small:before {
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5); }
+  
+  .advent_star_a1 {
+    -webkit-animation: star-blink 10s infinite 0.5s both;
+    -moz-animation: star-blink 10s infinite 0.5s both;
+    -ms-animation: star-blink 10s infinite 0.5s both;
+    animation: star-blink 10s infinite 0.5s both; }
+  
+  .advent_star_a2 {
+    -webkit-animation: star-blink 6s infinite reverse 0.2s both;
+    -moz-animation: star-blink 6s infinite reverse 0.2s both;
+    -ms-animation: star-blink 6s infinite reverse 0.2s both;
+    animation: star-blink 6s infinite reverse 0.2s both; }
+  
+  .advent_star_a3 {
+    -webkit-animation: star-blink 8s infinite alternate both;
+    -moz-animation: star-blink 8s infinite alternate both;
+    -ms-animation: star-blink 8s infinite alternate both;
+    animation: star-blink 8s infinite alternate both; }
+  
+  .advent_button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    padding-bottom: 46px;
+    text-align: center; }
+    .advent_button span,
+    .advent_button a {
+      display: inline-block;
+      position: relative;
+      padding: 12px 16px;
+      border-radius: 8px;
+      font-size: 20px;
+      color: white;
+      cursor: pointer;
+      text-decoration: none; }
+      .advent_button span:active,
+      .advent_button a:active {
+        top: 2px; }
+    .advent_button .button_red {
+      background: #eb3d41;
+      box-shadow: 0 3px #de171b;
+      text-shadow: 0 1px 1px #c71519; }
+      .advent_button .button_red:hover {
+        background: #ed5458; }
+      .advent_button .button_red:active {
+        box-shadow: 0 1px #c71519; }
+    .advent_button .button_green {
+      background: #a6ad47;
+      box-shadow: 0 3px #838938;
+      text-shadow: 0 1px 1px #727731; }
+      .advent_button .button_green:hover {
+        background: #b2b954; }
+      .advent_button .button_green:active {
+        box-shadow: 0 1px #727731; }
+    .advent_button .button_orange {
+      background: #f38a30;
+      box-shadow: 0 3px #e3700d;
+      text-shadow: 0 1px 1px #cb640c; }
+      .advent_button .button_orange:hover {
+        background: #f49848; }
+      .advent_button .button_orange:active {
+        box-shadow: 0 1px #cb640c; }
+  
+  .advent_mobile_body {
+    padding: 5px;
+    background: #2c183f; }
+  
+  .advent_treat_mobile {
+    position: relative;
+    width: 100%;
+    max-width: 370px;
+    min-height: 440px;
+    padding: 1px 0;
+    margin: auto; }
+    .advent_treat_mobile .advent_door {
+      -webkit-transform-origin: 0 50%;
+      -moz-transform-origin: 0 50%;
+      -ms-transform-origin: 0 50%;
+      transform-origin: 0 50%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      background-position: 50% 50%;
+      background-size: 100% 100%; }
+      .advent_treat_mobile .advent_door svg {
+        display: none; }
+      .advent_treat_mobile .advent_door.svg img {
+        display: none; }
+      .advent_treat_mobile .advent_door.svg svg {
+        display: block; }
+    .advent_treat_mobile .advent_door_content {
+      position: relative;
+      padding: 30px 0 20px; }
+    .advent_treat_mobile .advent_door_illustration {
+      margin: auto; }
+    .advent_treat_mobile .advent_treat {
+      position: relative;
+      z-index: 0;
+      min-height: 0;
+      margin: 10px 20px;
+      background: black url("/assets/giraffe/promotions/2013/advent/img/treat-background.jpg") 50% 50%;
+      background-size: 100% 100%; }
+      .advent_treat_mobile .advent_treat img {
+        width: 100%; }
+      .advent_treat_mobile .advent_treat .advent_button {
+        padding-bottom: 0;
+        bottom: 20.5%; }
+  
+  .mobile_holding_image {
+    width: 100%; }
+  
